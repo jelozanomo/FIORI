@@ -54,16 +54,26 @@
 			}
 		}, 
 		"routing": {
-            "config": { // contiene la configuracion global del enrutador
-		        "routerClass":"sap.m.routing.Router", "__comment":"//aplicacion basada en sap.m", 
-		        "viewtype":"XML",
-		        "viewPath":"sap.ui.demo.nav.view",
-		        "controlId":"app", 
-		        "controlAgregation": "pages", 
-		        "transition": "slide",
-		        "async": true
+            "config": { // contiene la configuracion global del enrutador  y valores predeterminados
+		        "routerClass":"sap.m.routing.Router", //aplicacion basada en sap.m  
+		        "viewtype":"XML", //formato de las view a usar en el FW
+		        "viewPath":"sap.ui.demo.nav.view", // se define donde estan nuestras views
+		        "controlId":"app", //se especifica el control que carga las views
+		        "controlAgregation": "pages",  //lo que se llenara cuando la nueva pagina
+		        "transition": "slide", //Como debe ocurri la transicion [slide, flip, fade, and show.]
+		        "async": true 
+		    	//Los posibles valores para routerClass son [
+			//  sap.ui.core.routing.Router, 
+			//  sap.m.routing.Router], o cualquier otra subclase de sap.ui.core.routing.Router. 
+
+			// Comparada a sap.ui.core.routing.Router el  sap.m.routing.Router  esta optimizada 
+			// para app moviles y agrega las propiedades viewLevel, transition y transitionParameters 
+			// que se pueden especificar para cada ruta o destino creado por sap.m.routing.Router. 
+
+			//Los * transitionParameters * también se pueden usar para transiciones personalizadas.
 		    }
 		}
 		
 	}
 }
+
