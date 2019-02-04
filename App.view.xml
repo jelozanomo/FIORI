@@ -1,0 +1,15 @@
+//En la vista de la aplicación, eliminamos el contenido del control de la aplicación. 
+//Las páginas se agregarán dinámicamente como lo hemos configurado en el descriptor. 
+//La vista configurada con la propiedad
+//rootView se crea automáticamente cuando se llama la aplicación inicialmente.
+
+
+<<mvc:View
+	controllerName="sap.ui.demo.nav.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+	<Shell>
+		<App id="app"/>
+	</Shell>
+</mvc:View>
