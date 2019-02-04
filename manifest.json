@@ -71,9 +71,22 @@
 			// que se pueden especificar para cada ruta o destino creado por sap.m.routing.Router. 
 
 			//Los * transitionParameters * también se pueden usar para transiciones personalizadas.
-		    }
+		    },
+		  "routes": [{ //Cada ruta define un nombre, un patrón y uno o más objetivos para navegar cuando la ruta ha sido alcanzada.
+		      "pattern": "", //a parte de hash de la URL que coincide con la ruta.
+		      "name": "appHome",// name permite elegir un nombre de ruta único que lo ayude a navegar por una ruta específica 
+		      "target": "home" // referencia a uno o más target de la sección a continuación que se mostrarán cuando la ruta haya sido comparada.
+		  }],
+		   "targets":{ //define la view que se muestra  Se asocia con una o más rutas o se puede visualizar manualmente desde la aplicación.
+		      "home":{
+		          "viewId": "home", //Cada target tiene un id unico (home).
+		          "viewName": "home", // define qué vista se cargará.
+		          "viewLevel":1  // El viewLevel es especialmente relevante para las transiciones flip y slide.
+		      }
+		 //Siempre que se muestra un target, se carga la view correspondiente y se agrega a 
+		 //la agregación configurada con la opción controlAggregation del control.
+		  }		
 		}
-		
 	}
 }
 
