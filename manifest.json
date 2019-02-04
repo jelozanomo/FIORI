@@ -82,6 +82,7 @@
 		          "viewId": "home", //Cada target tiene un id unico (home).
 		          "viewName": "home", // define qué vista se cargará.
 		          "viewLevel":1  // El viewLevel es especialmente relevante para las transiciones flip y slide.
+			      		// Ayuda al enrutador a determinar la dirección de la transición de una página a otra.
 		      }
 		 //Siempre que se muestra un target, se carga la view correspondiente y se agrega a 
 		 //la agregación configurada con la opción controlAggregation del control.
