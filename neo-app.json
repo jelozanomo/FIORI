@@ -1,5 +1,6 @@
+//Cree dos objetos de configuración que contengan una ruta, un destino y un atributo de descripción con más ajustes de configuración.
 {
-  "welcomeFile": "index.html",
+  "welcomeFile": "index.html", //archivo de bienvenida clave para configurar el punto de entrada a su aplicación. En aplicaciones web, este suele ser el archivo index.html.
   "routes": [
     {
       "path": "/resources",
@@ -7,16 +8,17 @@
         "type": "service",
         "name": "sapui5",
         "version": "snapshot",
-        "entryPath": "/resources"
+        "entryPath": "/resources" // La ruta y los valores de entryPath apuntarán a la ubicación en el servidor donde se almacenarán los recursos de SAPUI5.
       },
       "description": "SAPUI5 Resources"
     },
+  // configura los recursos de prueba necesarios para la integración del launchpad de SAP Fiori con la ruta /test-resource
     {
       "path": "/test-resources",
       "target": {
         "type": "service",
         "name": "sapui5",
-        "entryPath": "/test-resources"
+        "entryPath": "/test-resources" // La ruta y los valores de entryPath apuntarán a la ubicación en el servidor donde se almacenarán los recursos de SAPUI5.
       },
       "description": "SAPUI5 Test Resources"
     }
