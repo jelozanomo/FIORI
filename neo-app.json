@@ -23,4 +23,11 @@
   ]
 }
 
-/*fghjk*/
+//El archivo neo-app.json contiene todas las configuraciones del proyecto para SAP Web IDE.
+//Se crea en la carpeta raíz de su proyecto
+//Es un archivo de formato JSON que consta de múltiples claves de configuración.
+//La configuración más importante que debe configurar es la Path donde se encuentra el tiempo de ejecución de SAPUI5 al iniciar la aplicación.
+
+
+//Uilice la clave Path defina una matriz de objetos de recursos.
+//SAPUI5 estará disponible con la ruta:Path rources.
